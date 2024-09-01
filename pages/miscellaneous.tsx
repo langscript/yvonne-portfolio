@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
 
+
 const autoPlayTime: number = 5000;
 
 const images = [
     '/yvonne.jpg',
     '/bjj.jpg',
-    '/yvonne.jpg'
+    '/friends.jpg'
 ]
 
 const Miscellaneous = () => {
@@ -38,46 +39,62 @@ const Miscellaneous = () => {
 
     return (
         <div className={'animate-fade-in'}>
-            <div className="relative w-full max-w-lg mx-auto">
-                <div className="overflow-hidden rounded-lg relative">
-                    <div
-                        className="whitespace-nowrap transition-transform duration-500"
-                        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                    >
-                        {images.map((image, index) => (
-                            <img
-                                key={index}
-                                src={image}
-                                alt={`Slide ${index}`}
-                                className="inline-block w-full object-cover h-96"
-                            />
-                        ))}
-                    </div>
+            <div className="relative w-full max-w-2xl max-h-[600px] h-full perspective">
+                <style>
+                    {
+                        `
+                             .card {
+                    position: absolute;
+                    width: 60%;
+                    height: 100%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transition: transform 0.4s ease;
+                    cursor: pointer;
+                }
 
-                    <button
-                        onClick={prevSlide}
-                        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-500"
-                    >
-                        &lt;
-                    </button>
-                    <button
-                        onClick={nextSlide}
-                        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-500"
-                    >
-                        &gt;
-                    </button>
+                    #item-1:checked ~ .relative #song-3,
+                    #item-2:checked ~ .relative #song-1,
+                    #item-3:checked ~ .relative #song-2 {
+                    transform: translateX(-40%) scale(0.8);
+                    opacity: 0.4;
+                    z-index: 0;
+                }
 
-                    <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                        {images.map((_, index) => (
-                            <button
-                                key={index}
-                                onClick={() => goToSlide(index)}
-                                className={`mx-1 w-3 h-3 rounded-full ${
-                                    currentIndex === index ? 'bg-blue-500' : 'bg-gary-100'
-                                }`}
-                            ></button>
-                        ))}
-                    </div>
+                    #item-1:checked ~ .relative #song-2,
+                    #item-2:checked ~ .relative #song-3,
+                    #item-3:checked ~ .relative #song-1 {
+                    transform: translateX(40%) scale(0.8);
+                    opacity: 0.4;
+                    z-index: 0;
+                }
+
+                    #item-1:checked ~ .relative #song-1,
+                    #item-2:checked ~ .relative #song-2,
+                    #item-3:checked ~ .relative #song-3 {
+                    transform: translateX(0) scale(1);
+                    opacity: 1;
+                    z-index: 1;
+                }
+                        `
+                    }
+                </style>
+                <input type="radio" name="slider" id="item-1" className={'hidden'} checked/>
+                <input type="radio" name="slider" id="item-2" className={'hidden'}/>
+                <input type="radio" name="slider" id="item-3" className={'hidden'}/>
+                <div className="relative w-full h-full mb-5">
+                    {
+                        images.map((image, index) => (
+                            <label className="card transition-transform duration-400 ease cursor-pointer" htmlFor={`item-` + index} id={`song-` + index}>
+                                <img
+                                    className={'inline-block w-full object-cover h-96 '}
+                                    src={image}
+                                    alt={'song'}
+                                />
+                            </label>
+                        ))
+                    }
                 </div>
             </div>
         </div>
