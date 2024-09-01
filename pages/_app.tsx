@@ -6,9 +6,9 @@ import Navbar from "../components/Navbar";
 function App({Component, pageProps} : AppProps){
 
     return (
-        <main className={'flex min-h-screen flex-col bg-[#f4f1de]'}>
+        <main className={'font-serif flex min-h-screen flex-col'}>
             <Navbar/>
-            <main className={'container mt-24 mx-auto px-12 py-4'}>
+            <main className={'container mt-24 mx-auto px-20 py-10'}>
                 <Component {...pageProps}/>
             </main>
         </main>

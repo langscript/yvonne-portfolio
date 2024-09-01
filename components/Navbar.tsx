@@ -17,8 +17,8 @@ const navLinks = [
         path: '/teaching'
     },
     {
-        title: 'Resume',
-        path: '/resume'
+        title: 'Miscellaneous',
+        path: '/miscellaneous'
     }
 ]
 
@@ -26,9 +26,13 @@ const Navbar = () => {
 
     const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
+    const handleOpenCV = () => {
+        window.open('/yvonne_cv.pdf', '_blank');
+    }
+
     return (
         <nav className={"fixed mx-auto top-0 left-0 right-0 z-10"}>
-            <div className="flex container lg:py-4 flex-wrap justify-end mx-auto px-4 py-2">
+            <div className="flex container lg:py-4 flex-wrap justify-between items-center mx-auto px-4 py-2">
                 {/*<Link*/}
                 {/*    href={"/"}*/}
                 {/*    className="text-2xl md:text-5xl text-white font-semibold"*/}
@@ -52,6 +56,7 @@ const Navbar = () => {
                 {/*        </button>*/}
                 {/*    )}*/}
                 {/*</div>*/}
+                <div className={'text-[#3d405b] text-2xl font-bold'}>Yvonne Huijun Zhu</div>
                 <div className="menu hidden md:block md:w-auto" id="navbar">
                     <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
                         {navLinks.map((link, index) => (
@@ -59,6 +64,14 @@ const Navbar = () => {
                                 <NavLink href={link.path} title={link.title} />
                             </li>
                         ))}
+                        <li>
+                            <div
+                                className="block py-2 pl-3 pr-4 text-[#000000] sm:text-xl rounded md:p-0 hover:text-[#e07a5f] hover:underline hover:cursor-pointer"
+                                onClick={handleOpenCV}
+                            >
+                                Resume
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
