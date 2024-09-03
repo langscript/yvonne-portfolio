@@ -4,19 +4,16 @@ const Teaching = () => {
 
     return (
         <div className={'animate-fade-in flex flex-col gap-10'}>
-            <p className={'text-2xl font-bold'}>Teaching</p>
-            <ul>
-                <li>
-                    <div>
-                        TEACHING ASSISTANT
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        TEACHING INSTRUCTOR
-                    </div>
-                </li>
-            </ul>
+            {/*<p className={'text-2xl font-bold'}>Teaching</p>*/}
+            <div className={'flex flex-col gap-8'}>
+                <div className={'text-2xl font-bold'}>
+                    Teaching Assistant
+                </div>
+
+                <div className={'text-2xl font-bold'}>
+                    Teaching Instructor
+                </div>
+            </div>
         </div>
     )
 }
