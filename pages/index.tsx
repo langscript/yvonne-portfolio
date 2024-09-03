@@ -27,7 +27,7 @@ const eductions = [
 const About = () => {
 
     return (
-        <div className={'animate-fade-in flex flex-row justify-between items-center'}>
+        <div className={'animate-fade-in md:flex md:flex-row justify-between items-center'} >
             <div className={'flex flex-col items-center gap-10'}>
                 <Image src={'/yvonne.jpg'} className={'w-60 h-60 bg-[#ffffff] rounded-full'}></Image>
                 <div className={'flex flex-col w-full gap-2 text-sm items-center gap-3'}>
@@ -59,7 +59,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className={'flex flex-col w-2/3 gap-4'}>
+            <div className={'w-full flex flex-col md:w-2/3 gap-4 mt-10 md:mt-0'}>
                 <p className={'text-2xl text-[#3d405b]'}>About me</p>
                 <div className={'text-md'}>
                     I am a final-year Ph.D. student from Institute of Operations Research and Analytics (IORA),
@@ -70,7 +70,7 @@ const About = () => {
                     staffing
                     for pandemic preparedness, and dengue prevention and control.
                 </div>
-                <div className={'flex flex-row gap-10 mt-6'}>
+                <div className={'flex flex-col md:flex-row gap-10 mt-6'}>
                     <div className={'flex flex-col gap-2'}>
                         <p className={'text-xl text-[#3d405b]'}>Research Interest</p>
                         <ul className={'list-disc flex flex-col p-4'}>

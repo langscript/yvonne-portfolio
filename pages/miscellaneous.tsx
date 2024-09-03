@@ -18,18 +18,18 @@ const images = [
 
 const slides = images.map((image, index) => ({
     key: index,
-    content: (<Image src={image} alt={'index'} className={'inline-block w-full object-cover h-96'}/>)
+    content: (<Image src={image} alt={'index'} className={'inline-block w-[50vw] object-cover h-96'}/>)
 }))
 
 const Miscellaneous = () => {
 
 
     return (
-        <div className={'animate-fade-in'}>
+        <div className={'animate-fade-in ml-[15vw] md:mx-auto md:my-0 w-[70vw] md:w-[40vw]'}>
             <CustomCarousel
                 cards={slides}
                 height="500px"
-                width="800px"
+                width="100%"
                 margin="0 auto"
                 offset={2}
                 showArrows={false}

@@ -6,12 +6,12 @@ interface LinksProps {
     title: string
 }
 
-const MenuOverlay = ({ links } : { links: LinksProps[] }) => {
+const MenuOverlay = ({links, onClose}: { links: LinksProps[], onClose: () => void }) => {
     return (
-        <ul className="flex flex-col py-4 items-center">
+        <ul className="flex flex-col py-4 items-center bg-[#f2cc8f]">
             {links.map((link, index) => (
-                <li key={index}>
-                    <NavLink href={link.path} title={link.title} />
+                <li key={index} onClick={onClose}>
+                    <NavLink href={link.path} title={link.title}/>
                 </li>
             ))}
         </ul>
