@@ -49,13 +49,13 @@ const About = () => {
                             </a>
                         </Tooltip>
 
-                        <Tooltip content={'Instagram'}>
-                            <div>
-                                <AiFillInstagram
-                                    className={'h-6 w-6 hover:text-[#e07a5f]'}
-                                />
-                            </div>
-                        </Tooltip>
+                        {/*<Tooltip content={'Instagram'}>*/}
+                        {/*    <div>*/}
+                        {/*        <AiFillInstagram*/}
+                        {/*            className={'h-6 w-6 hover:text-[#e07a5f]'}*/}
+                        {/*        />*/}
+                        {/*    </div>*/}
+                        {/*</Tooltip>*/}
                     </div>
                 </div>
             </div>

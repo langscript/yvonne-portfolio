@@ -1,14 +1,15 @@
-import React from "react";
+import React, {ReactNode} from "react";
 
 type ResearchListItemProps = {
-    title: string
+    title: string | ReactNode
     // keywords: string
     // introduction: string
 }
 
 const publishedPapers: ResearchListItemProps[] = [
     {
-        title: 'Optimization of batch operations with a truncated batch-position-based learning effect. Omega, 2019, 85: 134-143.',
+        title: <div>Optimization of batch operations with a truncated batch-position-based learning effect. <a className={'italic'}>Omega</a>, 2019,
+            85: 134-143.</div>
         // keywords: 'Project management; Learning effects; Batch processing; Optimization; Approximation algorithms',
         // introduction: 'Large-scale vehicle routing problem; Cost-effectiveness analysis; Public health; Infectious diseases Introduction: This work introduces a method to analyze the cost-effectiveness of maintaining an ovitrap network by incorporating operational processes and labor costs. Effectiveness is modeled using an epidemiological framework and measured by reductions in disability-adjusted life years (DALYs). Labor costs are estimated by modeling the workload required for periodic trap maintenance through Traveling Salesman Problems (TSPs). Using Singapore’s large-scale ovitrap network as a case study, the work estimates the impact of network size on the mosquito population and demonstrates the method’s application.'
     }
@@ -16,7 +17,10 @@ const publishedPapers: ResearchListItemProps[] = [
 
 const workingPapers: ResearchListItemProps[] = [
     {
-        title: 'Cost-effectiveness of a network of lethal ovitraps for the prevention and control of dengue fever, work with Joel Goh, Shuzhen Sim (NEA) and Joel Aik (NEA). under R&R for Production and Operations Management.'
+        title: <div>Cost-effectiveness of a network of lethal ovitraps for the prevention and control of dengue fever,
+            work with Joel Goh, Shuzhen Sim (NEA) and Joel Aik (NEA). &nbsp;<a className={'italic'}>under R&R for
+                Production and Operations
+                Management.</a></div>
     }
 ]
 
@@ -25,7 +29,7 @@ const workingInProgress: ResearchListItemProps[] = [
         title: 'The value of flexibility in adaptive experiments, work with Yifan Feng and Tu Ni.'
     },
     {
-        title: 'Dynamic staffing in Pandemic, work with Joel Goh, Yee Wei Lim (Alexandra Hospital) and Louisa Jin (Alexandra Hospital).'
+        title: 'Dynamic hospital staffing during pandemic, work with Joel Goh, Yee Wei Lim (Alexandra Hospital) and Louisa Jin (Alexandra Hospital).'
     },
     {
         title: 'Large-scale home health care routing and scheduling, work with Joel Goh and Stephanie Ko (NUHS).'
