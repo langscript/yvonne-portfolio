@@ -1,0 +1,25 @@
+// pages/_document.js
+import {Head, Html, Main, NextScript} from 'next/document'
+
+export default function MyDocument() {
+    return (
+        <Html>
+            <Head>
+                {/* Example: Inserting a custom script */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                <title>Yvonne Zhu</title>
+                <meta name="keywords" content="Yvonne Zhu, YvonneZhu, yvonnezhu, Yvonne, huijun zhu, zhuhuijun, zhu huijun">
+                <meta name="google-site-verification" content="_H3bIKp7Rjm2WGkl62u65-k_weLOpTxlmjcR5TqtrvE" />
+            `,
+                    }}
+                />
+            </Head>
+            <body>
+            <Main/>
+            <NextScript/>
+            </body>
+        </Html>
+    )
+}

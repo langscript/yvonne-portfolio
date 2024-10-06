@@ -28,7 +28,7 @@ const Miscellaneous = () => {
             <div className={'flex flex-col md:flex-row justify-between gap-2 md:gap-24 md:items-center w-full'}>
                 <span className={'italic'}>"Jiu-jitsu is personal efficiency to protect the weaker, which anyone can do. It is the force of
                         leverage against brute force."</span>
-                <span className={'self-end md:self-center'}>- Helio Gracie.</span>
+                <span className={'self-end md:self-center'}>- Helio Gracie</span>
             </div>
             <div className={'flex flex-col md:flex-row justify-between gap-2 md:gap-24 md:items-center w-full'}>
                 <span className={'italic'}>“A strong body is a good asset. A strong mind is a very good asset.”</span>
