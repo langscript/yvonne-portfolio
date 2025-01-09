@@ -12,6 +12,7 @@ export default function MyDocument() {
                 <title>Yvonne Zhu</title>
                 <meta name="keywords" content="Yvonne Zhu, YvonneZhu, yvonnezhu, Yvonne, huijun zhu, zhuhuijun, zhu huijun">
                 <meta name="google-site-verification" content="_H3bIKp7Rjm2WGkl62u65-k_weLOpTxlmjcR5TqtrvE" />
+                <meta name="google-site-verification" content="xklZOG1Ldoup7-bEP5_qZYSG6RnJFi93Eyu2T21lzn0" />
             `,
                     }}
                 />

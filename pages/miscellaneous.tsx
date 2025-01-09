@@ -6,10 +6,10 @@ import CustomCarousel from "../components/carousel/CustomCarousel";
 const autoPlayTime: number = 5000;
 
 const images = [
+    '/people.jpg',
     '/coach.jpg',
     '/bjj.jpg',
     '/friends.jpg',
-    '/people.jpg',
     '/students.jpg'
 ]
 

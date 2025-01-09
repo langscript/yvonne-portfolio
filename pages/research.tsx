@@ -12,6 +12,12 @@ const publishedPapers: ResearchListItemProps[] = [
             85: 134-143.</div>
         // keywords: 'Project management; Learning effects; Batch processing; Optimization; Approximation algorithms',
         // introduction: 'Large-scale vehicle routing problem; Cost-effectiveness analysis; Public health; Infectious diseases Introduction: This work introduces a method to analyze the cost-effectiveness of maintaining an ovitrap network by incorporating operational processes and labor costs. Effectiveness is modeled using an epidemiological framework and measured by reductions in disability-adjusted life years (DALYs). Labor costs are estimated by modeling the workload required for periodic trap maintenance through Traveling Salesman Problems (TSPs). Using Singapore’s large-scale ovitrap network as a case study, the work estimates the impact of network size on the mosquito population and demonstrates the method’s application.'
+    },
+    {
+        title: <div>Integrated optimization of design and production for personalized products. <a className={'italic'}>Journal of Modelling in Management</a>, 2023,
+            85: 1746-5664.</div>
+        // keywords: 'Project management; Learning effects; Batch processing; Optimization; Approximation algorithms',
+        // introduction: 'Large-scale vehicle routing problem; Cost-effectiveness analysis; Public health; Infectious diseases Introduction: This work introduces a method to analyze the cost-effectiveness of maintaining an ovitrap network by incorporating operational processes and labor costs. Effectiveness is modeled using an epidemiological framework and measured by reductions in disability-adjusted life years (DALYs). Labor costs are estimated by modeling the workload required for periodic trap maintenance through Traveling Salesman Problems (TSPs). Using Singapore’s large-scale ovitrap network as a case study, the work estimates the impact of network size on the mosquito population and demonstrates the method’s application.'
     }
 ]
 

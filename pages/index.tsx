@@ -1,6 +1,6 @@
 import React from "react";
 import {MdOutlineMailOutline} from "react-icons/md";
-import {AiFillInstagram, AiFillLinkedin} from "react-icons/ai";
+import {AiFillLinkedin} from "react-icons/ai";
 import {Tooltip} from "@nextui-org/tooltip";
 import {Image} from "@nextui-org/react";
 
@@ -27,7 +27,7 @@ const eductions = [
 const About = () => {
 
     return (
-        <div className={'animate-fade-in md:flex md:flex-row justify-between items-center'} >
+        <div className={'animate-fade-in md:flex md:flex-row justify-between items-center'}>
             <div className={'flex flex-col items-center gap-10'}>
                 <Image src={'/yvonne.jpg'} className={'w-60 h-60 bg-[#ffffff] rounded-full'}></Image>
                 <div className={'flex flex-col w-full gap-2 text-sm items-center gap-3'}>
@@ -63,12 +63,16 @@ const About = () => {
                 <p className={'text-2xl text-[#3d405b]'}>About me</p>
                 <div className={'text-md'}>
                     I am a final-year Ph.D. student from Institute of Operations Research and Analytics (IORA),
-                    National University of Singapore (NUS), advised by Professor <a href={'https://www.joelgoh.net/'} className={'text-[#3d405b] hover:text-[#e07a5f]'} target={'_blank'}>Joel Goh</a>
-                    &nbsp;and Professor <a href={'https://sites.google.com/view/yifanfeng/'} className={'text-[#3d405b] hover:text-[#e07a5f]'} target={'_blank'}>Yifan Feng</a>. My research interests primarily focus on experimental design and
-                    data-driven
-                    modeling in healthcare operations management, such as, hospital-at-home operations, healthcare
-                    staffing
-                    for pandemic preparedness, and dengue prevention and control.
+                    National University of Singapore (NUS), advised by Professor <a href={'https://www.joelgoh.net/'}
+                                                                                    className={'text-[#3d405b] hover:text-[#e07a5f]'}
+                                                                                    target={'_blank'}>Joel Goh</a>
+                    &nbsp;and Professor <a href={'https://sites.google.com/view/yifanfeng/'}
+                                           className={'text-[#3d405b] hover:text-[#e07a5f]'} target={'_blank'}>Yifan
+                    Feng</a>. My research interests lie in operations management within
+                    public healthcare, focusing on areas such as the prevention and treatment of infectious diseases and
+                    improving the quality of life for aging populations. I am also interested about data analysis,
+                    particularly in leveraging adaptive experimentation to collect data more efficiently and enhance
+                    healthcare decision-making.
                 </div>
                 <div className={'flex flex-col md:flex-row gap-10 mt-6'}>
                     <div className={'flex flex-col gap-2'}>
